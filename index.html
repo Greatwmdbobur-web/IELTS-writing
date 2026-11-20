@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IELTS Writing Studio — practice, organise and improve your IELTS essays.">
+  <title>WriteWise — IELTS Writing Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">W</span><span>writewise<span class="brand-dot">.</span></span></a>
+    <nav><a class="active" href="#workspace">Workspace</a><a href="#how">How it works</a></nav>
+    <button class="profile" aria-label="Profile">B</button>
+  </header>
+  <main>
+    <section class="hero">
+      <div><div class="eyebrow"><span class="spark">✦</span> YOUR IELTS WRITING COMPANION</div>
+        <h1>Write with purpose.<br><em>Improve with practice.</em></h1>
+        <p class="hero-copy">A focused space to practise IELTS Academic Writing, review your structure and build stronger arguments — one essay at a time.</p>
+        <div class="hero-pills"><span>✦ Task 1 & Task 2</span><span>◷ Timed practice</span><span>↗ Progress tools</span></div>
+      </div>
+      <div class="hero-art"><div class="paper paper-back"></div><div class="paper paper-front"><div class="paper-line short"></div><div class="paper-line"></div><div class="paper-line"></div><div class="paper-line mid"></div><div class="paper-highlight">stronger ideas</div><div class="paper-line"></div><div class="paper-line mid"></div><div class="paper-line"></div><div class="paper-check">✓</div></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div></div>
+    </section>
+    <section class="workspace" id="workspace">
+      <div class="section-heading"><div><div class="eyebrow">PRACTICE ROOM</div><h2>Start a writing session</h2></div><div class="session-tag"><span class="live-dot"></span> Personal workspace</div></div>
+      <div class="workspace-grid">
+        <aside class="side-panel">
+          <h3>Choose your task</h3>
+          <button class="task-option selected" data-task="task2"><span class="task-icon">Ⅱ</span><span><b>Writing Task 2</b><small>Essay · 40 minutes</small></span><span class="arrow">›</span></button>
+          <button class="task-option" data-task="task1"><span class="task-icon">Ⅰ</span><span><b>Writing Task 1</b><small>Report · 20 minutes</small></span><span class="arrow">›</span></button>
+          <div class="prompt-card"><div class="prompt-label">TODAY'S QUESTION</div><p id="promptText">Some people believe that university education should be free for everyone. To what extent do you agree or disagree?</p><button id="newPrompt" class="text-button">↻ Try another question</button></div>
+          <div class="goal-card"><span class="goal-icon">✦</span><div><b>Small steps add up</b><p>Write regularly. Review thoughtfully. Improve consistently.</p></div></div>
+        </aside>
+        <section class="editor-panel">
+          <div class="editor-top"><div><span class="editor-label">YOUR RESPONSE</span><span class="autosave" id="saveStatus">● Saved in this browser</span></div><button class="clear-button" id="clearEssay">Clear draft</button></div>
+          <textarea id="essay" placeholder="Start writing your response here...&#10;&#10;Tip: organise your ideas into clear paragraphs and support each main point with an explanation or example."></textarea>
+          <div class="editor-footer"><div class="metrics"><span><b id="wordCount">0</b><small>Words</small></span><span><b id="paragraphCount">0</b><small>Paragraphs</small></span><span><b id="charCount">0</b><small>Characters</small></span></div><div class="actions"><button class="button button-light" id="sampleBtn">Load sample</button><button class="button button-primary" id="reviewBtn">Review my writing <span>→</span></button></div></div>
+          <div class="notice">ⓘ This first version provides learning-oriented checks, not an official IELTS score or examiner assessment.</div>
+        </section>
+      </div>
+    </section>
+    <section class="feedback-section" id="feedback">
+      <div class="section-heading"><div><div class="eyebrow">YOUR REVIEW</div><h2>Writing insights</h2></div><span class="review-state" id="reviewState">Waiting for your draft</span></div>
+      <div class="feedback-grid">
+        <div class="score-card"><div class="score-ring"><span id="readiness">—</span><small>readiness</small></div><h3>Practice snapshot</h3><p id="scoreNote">Submit a draft to see your writing checklist.</p><div class="score-legend"><span><i class="green"></i> Met</span><span><i class="amber"></i> Check</span></div></div>
+        <div class="insights-card"><h3>Structure & task checklist</h3><div id="checklist" class="checklist"><div class="empty-state">Your review will appear here after you submit your writing.</div></div></div>
+        <div class="insights-card language-card"><h3>Language signals</h3><div id="languageSignals" class="checklist"><div class="empty-state">We'll look for useful language patterns in your draft.</div></div></div>
+      </div>
+      <div class="feedback-bottom"><div><b>Want a deeper review?</b><p>AI-powered criterion feedback, sentence-level corrections and personalised study plans are planned for a future release.</p></div><span class="coming-soon">COMING SOON</span></div>
+    </section>
+    <section class="how-section" id="how"><div class="eyebrow">A BETTER PRACTICE HABIT</div><h2>Three steps to stronger writing</h2><div class="steps"><div><span>01</span><h3>Choose a prompt</h3><p>Practise with a focused IELTS-style question.</p></div><div><span>02</span><h3>Write your response</h3><p>Build a clear position and develop your ideas.</p></div><div><span>03</span><h3>Review and refine</h3><p>Use the checklist to decide what to improve next.</p></div></div></section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">W</span><span>writewise<span class="brand-dot">.</span></span></a><span>Made for focused English practice.</span><span>© 2026 WriteWise</span></footer>
+  <script src="app.js"></script>
+</body></html>
